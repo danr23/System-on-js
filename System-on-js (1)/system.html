@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<style>
+body {
+background: -moz-radial-gradient(circle farthest-corner at top, #bfbfef, #f0ffff, #202020) fixed;
+background: -webkit-radial-gradient(circle farthest-corner at top, #bfbfef, #f0ffff, #202020) fixed;
+background: -o-radial-gradient(circle farthest-corner at top, #bfbfef, #f0ffff, #202020) fixed;
+background: radial-gradient(circle farthest-corner at top, #bfbfef, #f0ffff, #202020) fixed;
+}
+</style>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="system-styles/system-gui.css">
+<link rel="stylesheet" href="system-styles/window-style.css">
+</head>
+<body>
+<div align="center" class="date"></div>
+<div class="apps" id="apps">
+<button class="calculator" id="calc"><img src="img/calculator.png" width="32px" height="32px"></img></button><br>
+<button class="calculator" id="otzivi"><img src="img/favicon.png" width="32px" height="32px"></img></button>
+</div>
+<div id="calc_window" class="calc_window">
+<div id="calc_content" class="calc_content">
+<span id="close_calc" class="close">&times;</span>
+<span id="restore_down" class="restore_down"><img src="img/restore_down.png" width="23px" height="23px"></img></span>
+<span id="hidden_calc" class="hidden"> _ </span>
+<span id="title" class="title">Калькулятор</span><br><br>
+<input type="text" placeholder="Enter number" id="first-number"></input> <span id="operation"></span> <input type="text" placeholder="Enter second number" id="second-number"></input> = <span id="answer"></span><br>
+<button class="plus">+</button>
+<button class="minus">-</button>
+<button class="times">&times;</button>
+<button class="divide">&divide;</button><br>
+</div>
+</div>
+<div id="otzivi_window" class="calc_window">
+<div id="otzivi_content" class="calc_content">
+<span id="close_otzivi" class="close">&times;</span>
+<span id="otzivi_restore_down" class="restore_down"><img src="img/restore_down.png" width="23px" height="23px"></img></span>
+<span id="hidden_otzivi" class="hidden"> _ </span>
+<span id="title" class="title">Отзывы на суши</span><br><br>
+<iframe src="../otzivi/index.html" style="border:0px solid #000000;" width="100%" height="85%"></iframe>
+</div>
+</div>
+</body>
+</html>
+<script src="time.js"></script>
+<script src="open-window.js"></script>

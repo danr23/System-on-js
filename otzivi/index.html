@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Отзывы на суши</title>
+<link type="image/png" rel="icon" href="favicon.png"></link>
+<link rel="stylesheet" href="modal.css"></link>
+</head>
+<body><div align="right"><a href="zhalobi.html"><img src="zhalobamsg.png" width="32px" height="32px" title="Посмотреть жалобы" alt="Посмотреть жалобы"></img></a>
+<a style="border:0px solid #000;background-color:rgba(0,0,0,0);cursor:pointer;" href="feedback.html"><img title="Отправить жалобу" alt="Отправить жалобу" src="zhaloba.png" width="32px" height="32px"></img></a>
+<a href="otzivi.html"><img src="favicon.png" width="32px" height="32px" title="Посмотреть отзывы" alt="Посмотреть отзывы"></img></a>
+</div>
+<div align="center">
+<canvas id="canvas" width="150px" height="150px"></canvas>
+<h1>Привет!</h1><br>
+Тут вы можете отправлять свои отзывы на суши!<br>
+<form action="send.php" method="POST">
+<br><input type="text" name="input" placeholder="Введите отзыв." style="border: 2px solid #303030;border-radius: 15px;text-align:center;"></input><br><br>
+<input type="text" name="accountInp" placeholder="Введите своё имя." style="border: 2px solid #303030;border-radius: 15px;text-align:center;"></input><br><br>
+<input type="submit" value="OK">
+</form><br>
+Отзывы: <br><iframe src="otzivi.html" style="border: 4px solid #303030;border-radius: 15px;" width="512px" height="256px"></iframe><br>
+<button onclick="location.href = 'types/index.html'">Посмотреть виды роллов</button><br><br>
+<button onclick="location.href = 'types/up.php'">Добавить вид роллов</button><br>
+</div>
+</body>
+</html>
+<script src="decorations.js"></script>
+<script src="modal.js"></script>
